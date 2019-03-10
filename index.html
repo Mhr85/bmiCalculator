@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BMI Calculator</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var weight = prompt("What is your weight");
+    weight = (weight * 0.45);
+    var height = prompt("What is your height");
+    height = (height * 0.3048 / 1);
+    var bmi = weight / (height * height);
+
+
+    if (bmi < 18.5){
+      alert("Your BMI is " + bmi + " so you are underweight." )
+    }
+
+    if (bmi > 18.5 && bmi < 24.9){
+      alert("Your BMI is " + bmi + " so you have normal weight.");
+    }
+
+    if (bmi > 24.9){
+      alert("Your BMI is " + bmi + " so you are overweight.");
+    }
+  </script>
+</body>
+</html>
